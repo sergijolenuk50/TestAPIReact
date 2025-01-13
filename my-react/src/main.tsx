@@ -9,9 +9,9 @@ import { store } from './store/index';
 createRoot(document.getElementById('root')!).render(
   <>
     <Provider store={store}>
-     <BrowserRouter>
+     {/* <BrowserRouter> */}
      <App />
-     </BrowserRouter>
+     {/* </BrowserRouter> */}
     </Provider>,
   </>
 )

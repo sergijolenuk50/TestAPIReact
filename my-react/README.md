@@ -58,4 +58,11 @@ export default tseslint.config({
 ```
 
 
-npm i axios
+<!-- npm i axios -->
+
+
+<!-- npm install react-router-dom -->
+
+<!-- npm i antd -->
+
+<!-- https://github.com/novakvova/Django_PV212 -->
