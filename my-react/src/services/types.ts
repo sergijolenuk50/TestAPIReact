@@ -11,3 +11,7 @@ export interface ICategoryPostRequest {
     slug: string;         // Унікальний ідентифікатор (обов'язкове поле)
     description?: string; // Опис (необов'язкове поле)
 }
+
+export interface ICategoryPutRequest extends Partial<ICategoryPostRequest> {
+    id: number;
+}

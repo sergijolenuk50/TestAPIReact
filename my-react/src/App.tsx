@@ -42,6 +42,7 @@ import Layout from "./components/Layout";
 import AboutPage from "./pages/AboutPage";
 import CategoryListPage from "./pages/Category/CategoryListPage";
 import CreateCategoryPage from "./pages/Category/CreateCategoryPage";
+import EditCategoryPage from "./pages/Category/EditCategoryPage";
 import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
 // import Layout from "./components/Layout";
@@ -60,7 +61,7 @@ const App: React.FC = () => {
                     <Route path="categories">
                         <Route index element={<CategoryListPage />} />
                         <Route path="create" element={<CreateCategoryPage />} />
-                        {/*<Route path="edit/:id" element={<EditCategoryPage />} />*/}
+                        <Route path="edit/:id" element={<EditCategoryPage />} />
                         {/*<Route path=":id" element={<ViewCategoryPage />} />*/}
                     </Route>
                 </Route>

@@ -1,4 +1,5 @@
 import {useGetCategoriesQuery} from "../../services/apiCategory.ts";
+
 import {Link} from "react-router-dom";
 const CategoryListPage = () => {
     const {data: list, isLoading, error} = useGetCategoriesQuery();
@@ -19,7 +20,7 @@ const CategoryListPage = () => {
                 {category.description}
             </td>
             <td className="px-6 py-4">
-                <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                <Link to={`edit/${category.id}`} className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</Link>
             </td>
         </tr>
     ));
@@ -60,6 +61,7 @@ const CategoryListPage = () => {
                             Опис
                         </th>
                         <th scope="col" className="px-6 py-3">
+                        
                         </th>
                     </tr>
                     </thead>
